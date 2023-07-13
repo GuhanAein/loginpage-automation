@@ -53,3 +53,6 @@ This Python script automates the login process on a Wi-Fi portal. It checks if t
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+If there are any issues please let me know and contributions are welcome
