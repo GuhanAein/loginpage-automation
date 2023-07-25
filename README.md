@@ -27,11 +27,11 @@ This Python script automates the login process on a Wi-Fi portal. It checks if t
 
 4. Set up the WebDriver:
    - Extract the WebDriver executable from the downloaded archive.
-   - Place the executable in a directory included in your system's PATH environment variable.
+   - Run the executable file and in cmd it will say Chrome driver installed sucessfully
 
 ## Usage
 
-1. Open the Python script file `wifi_login.py` in a text editor.
+1. Open the Python script file `wifirequest.py` in a text editor.
 
 2. Modify the script:
    - Replace `"KPR Institutions"` with the SSID (Wi-Fi network name) of your desired network.
@@ -45,14 +45,10 @@ This Python script automates the login process on a Wi-Fi portal. It checks if t
    - Navigate to the directory containing the script.
    - Run the following command:
      ```
-     python wifi_login.py
+     python wifirequest.py
      ```
 
    The script will check if your device is connected to the specified Wi-Fi network and perform the login process if it is. Otherwise, it will display a message indicating that it's not connected.
-
-
-If there are any issues please let me know and contributions are welcome
-
 
 To have your Python code run automatically on startup, you can create a script that runs your Python code and then set up a system-specific method for running that script at startup. The method for setting up a startup script can vary depending on your operating system. Below are instructions for Windows, macOS, and Linux.
 
@@ -63,12 +59,19 @@ To have your Python code run automatically on startup, you can create a script t
 @echo off
 pythonw.exe "C:\path\to\your\python_script.py"
 ```
+![image](https://github.com/GuhanAein/loginpage-automation/assets/102289063/5f562947-3668-4661-acf1-edef72091a8d)
 
-Replace `"C:\path\to\your\python_script.py"` with the actual path to your Python script.
+Replace `"C:\path\to\your\python_script.py"` with the actual path to your Python script where this python file is present.
+
+
+
+
 
 2. Press `Win + R`, type `shell:startup`, and click "OK". This will open the Startup folder.
+![image](https://github.com/GuhanAein/loginpage-automation/assets/102289063/2020d6a5-5208-4a73-80cc-8a7e532f339f)
 
 3. Move the `startup_script.bat` file into the Startup folder.
+![image](https://github.com/GuhanAein/loginpage-automation/assets/102289063/a851efc4-79cb-46b9-a8b3-c30aa5df4aa9)
 
 **macOS:**
 1. Create a shell script to run your Python code. Open a text editor and save the following lines as `startup_script.sh`:
